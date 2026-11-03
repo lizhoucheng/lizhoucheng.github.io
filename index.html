@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="hero"><p class="eyebrow">Software engineering · Full-stack · AI</p><h1>Notes on building<br>thoughtful software.</h1><p class="lede">I’m Zhoucheng, a software engineer exploring full-stack development, AI applications, and agents. This is where I share what I learn along the way.</p></section>
+<section class="hero"><p class="eyebrow">Software engineering · Full-stack · AI</p><h1>Notes 随笔</h1></section>
 <section aria-labelledby="writing-heading"><div class="section-title"><h2 id="writing-heading">Latest writing</h2><span>{{ site.posts.size }} {% if site.posts.size == 1 %}post{% else %}posts{% endif %}</span></div>
 {% for post in site.posts %}
 <article class="post-card"><p class="eyebrow">{{ post.date | date: '%b %-d, %Y' }}{% if post.categories.size > 0 %} · {{ post.categories | join: ' / ' | escape }}{% endif %}</p><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3><p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 35 }}</p><a class="read" href="{{ post.url | relative_url }}">Read article <span aria-hidden="true">↗</span></a></article>
