@@ -1,0 +1,11 @@
+title: Zhoucheng Li
+description: Notes on full-stack development, AI applications, and agents.
+author: Zhoucheng Li
+url: "https://lizhoucheng.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: /posts/:title/
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

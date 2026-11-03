@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header"><a class="brand" href="{{ '/' | relative_url }}">Zhoucheng Li<span class="dot">.</span></a><nav aria-label="Main navigation"><a href="{{ '/' | relative_url }}">Writing</a><a href="{{ '/about/' | relative_url }}">About</a><a href="https://github.com/lizhoucheng">GitHub</a></nav></header>
+  <main id="main">{{ content }}</main>
+  <footer>© {{ 'now' | date: '%Y' }} Zhoucheng Li <span>Built with curiosity.</span></footer>
+</body>
+</html>
