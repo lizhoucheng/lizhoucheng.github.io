@@ -6,7 +6,7 @@ date: 2026-11-03 00:00:00 -0800
 
 Recently, I dive my head into building some AI skills, and pick up a few observations and learnings along the way:
 
-**1. Trust Evals, Not Intuition**
+## 1. Trust Evals, Not Intuition
 
 When building a skill, it's easy to feel that it's useful. But intuition can be misleading.
 
@@ -16,7 +16,7 @@ Beyond task success, it's also worth considering token usage, latency, and execu
 
 Don't just assume a skill adds value just because it is built. Measure the improvement it actually provides.
 
-**2. Balance Scripts and LLM-Driven Execution**
+## 2. Balance Scripts and LLM-Driven Execution
 
 When designing a skill, one decision is which parts of its workflow should be handled by scripts and which should be left to the LLM.
 
